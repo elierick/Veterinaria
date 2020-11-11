@@ -33,4 +33,9 @@
     <string name="menu_miperfil">Perfil</string>
     <string name="menu_contacto">Contacto</string>
     <string name="menu_cerrar">Cerrar Sesión</string>
+    <string name="text_titleregister">Se parte de nuestra familia!</string>
+    <string name="text_registrar">Registrar</string>
+    <string name="text_nombre_register">Nombre</string>
+    <string name="text_apellidos_register">Apellidos</string>
+    <string name="text_telefono_register">Teléfono</string>
 </resources>
