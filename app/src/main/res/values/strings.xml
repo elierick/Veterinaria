@@ -38,4 +38,5 @@
     <string name="text_nombre_register">Nombre</string>
     <string name="text_apellidos_register">Apellidos</string>
     <string name="text_telefono_register">Teléfono</string>
+    <string name="text_btn_verdatos_pets">Ver</string>
 </resources>
