@@ -22,7 +22,11 @@ class Login : AppCompatActivity() {
 
         var intent = Intent(this,MyPets::class.java);
         startActivity(intent)
+    }
 
+    fun openActivityRegister(){
+        var intent = Intent(this,Register::class.java);
+        startActivity(intent)
     }
 
 }

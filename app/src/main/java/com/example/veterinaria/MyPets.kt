@@ -1,22 +1,23 @@
 package com.example.veterinaria
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
+
 import androidx.recyclerview.widget.RecyclerView
 
-class MyPets : AppCompatActivity(), my_pets_listener {
+class MyPets(override val recyclerview: Any) : AppCompatActivity(), my_pets_listener {
 
-    val petArrayList = ArrayList<Pet>()
-    val recyclerView1: RecyclerView = findViewById(R.id.recyclerview_pets)
+    val petArrayList = ArrayList<Pet>();
+    @SuppressLint("WrongConstant")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_pets)
 
         /*RECIBIR EL RECYCLERVIEW*/
-
+        val recyclerView1: RecyclerView = findViewById(R.id.recyclerview_pets)
         recyclerView1.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         /*creamos la lista de personas - arraylist*/
@@ -35,17 +36,14 @@ class MyPets : AppCompatActivity(), my_pets_listener {
     fun actualizarLista(){
         /*enviamos la lista al adaptador*/
         val adapter = Adapter_my_pets(petArrayList)
-
+        val recyclerViewB: RecyclerView = findViewById(R.id.recyclerview_pets)
         /*agregarmos el adpatador al recyclerview*/
-        recyclerView1.adapter = adapter
+        recyclerViewB.adapter = adapter
         adapter.notifyDataSetChanged();
     }
 
-    override val recyclerview: Any
-        get() = TODO("Not yet implemented")
-
-    override fun onPetsSaved(Pet: Pet) {
-        petArrayList.add(Pet)
+    override fun onPetsSaved(pet: Pet) {
+        petArrayList.add(pet)
         actualizarLista()
     }
 
