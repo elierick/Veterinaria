@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Veterinaria">
-        <activity android:name=".my_pets_item"></activity>
         <activity android:name=".Reminder" />
         <activity android:name=".NewAppointment" />
         <activity android:name=".MyPets"></activity>
