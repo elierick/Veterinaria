@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 
 class Login : AppCompatActivity() {
@@ -15,6 +16,12 @@ class Login : AppCompatActivity() {
         btnIngresar.setOnClickListener(){
             openActivityPets();
         }
+
+        val textviewRegistrase:TextView = findViewById(R.id.textView_Registrarse)
+        textviewRegistrase.setOnClickListener(){
+            openActivityRegister();
+        }
+
     }
 
 
