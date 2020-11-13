@@ -1,7 +1,5 @@
 package com.example.veterinaria
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -17,7 +15,7 @@ class Adapter_my_pets (var list: ArrayList<Pet>):RecyclerView.Adapter<Adapter_my
         /*agregamos el metodo para recibir los datos que vamos a gregar en la vista */
         fun bindItems(data:Pet){
             val nombre: TextView = itemView.findViewById(R.id.textView_Nombres)
-            val raza: TextView = itemView.findViewById(R.id.textView_Raza)
+            val raza: TextView = itemView.findViewById(R.id.textView_raza)
             val edad: TextView = itemView.findViewById(R.id.textView_Edad)
 
             nombre.text = data.nombre
@@ -41,7 +39,7 @@ class Adapter_my_pets (var list: ArrayList<Pet>):RecyclerView.Adapter<Adapter_my
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         /*creamos la variable de la vista q vamos a inflar*/
-        val vista =     LayoutInflater.from(parent.context).inflate(R.layout.activity_my_pets_item,parent,false)
+        val vista =     LayoutInflater.from(parent.context).inflate(R.layout.pets_items,parent,false)
         return ViewHolder(vista)
     }
 
