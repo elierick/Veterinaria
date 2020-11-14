@@ -9,19 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Veterinaria">
-        <activity android:name=".Reminder" />
-        <activity android:name=".NewAppointment" />
-        <activity android:name=".MyPets"></activity>
-        <activity android:name=".Payment" />
-        <activity android:name=".PetsData" />
-        <activity android:name=".Tips" />
-        <activity android:name=".profile" />
-        <activity android:name=".Contact" />
         <activity
-            android:name=".Register"
+            android:name=".login.Register"
             android:theme="@style/Theme.Veterinaria.NoActionBar" />
         <activity
-            android:name=".Login"
+            android:name=".login.Login"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.Veterinaria.NoActionBar">
             <intent-filter>

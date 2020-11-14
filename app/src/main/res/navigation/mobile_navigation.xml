@@ -23,18 +23,36 @@
 
     <fragment
         android:id="@+id/nav_mypets"
-        android:name="com.example.veterinaria.ui.gallery.Pets2Fragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/petsdos_gallery" />
+        android:name="com.example.veterinaria.ui.pets.MyPets"
+        android:label="@string/menu_mypets"
+        tools:layout="@layout/fragment_my_pets" />
 
     <fragment
         android:id="@+id/nav_citas"
-        android:name="com.example.veterinaria.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.example.veterinaria.ui.general.NewAppointment"
+        android:label="@string/menu_citas"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_consejos"
-        android:name="com.example.veterinaria.ConsejosFragment"
-        android:label="fragment_consejos"
+        android:name="com.example.veterinaria.ui.general.ConsejosFragment"
+        android:label="@string/menu_consejos"
         tools:layout="@layout/fragment_consejos" />
+
+    <fragment
+        android:id="@+id/nav_recordatorio"
+        android:name="com.example.veterinaria.ui.general.Reminder"
+        android:label="@string/menu_recordatorio"
+        tools:layout="@layout/fragment_consejos" />
+
+    <fragment
+        android:id="@+id/nav_miperfil"
+        android:name="com.example.veterinaria.login.profile"
+        android:label="@string/menu_miperfil"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.example.veterinaria.ui.general.Contact"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

@@ -1,10 +1,12 @@
-package com.example.veterinaria
+package com.example.veterinaria.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.veterinaria.R
+import com.example.veterinaria.models.Pet
 import java.util.ArrayList
 
 class Adapter_my_pets (var list: ArrayList<Pet>):RecyclerView.Adapter<Adapter_my_pets.ViewHolder>() {
@@ -13,7 +15,7 @@ class Adapter_my_pets (var list: ArrayList<Pet>):RecyclerView.Adapter<Adapter_my
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
 
         /*agregamos el metodo para recibir los datos que vamos a gregar en la vista */
-        fun bindItems(data:Pet){
+        fun bindItems(data: Pet){
             val nombre: TextView = itemView.findViewById(R.id.textView_Nombres)
             val raza: TextView = itemView.findViewById(R.id.textView_raza)
             val edad: TextView = itemView.findViewById(R.id.textView_Edad)
@@ -34,7 +36,7 @@ class Adapter_my_pets (var list: ArrayList<Pet>):RecyclerView.Adapter<Adapter_my
     override fun getItemCount(): Int {
         return list.size
     }
-    override fun onBindViewHolder(holder: Adapter_my_pets.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(list[position])
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -1,7 +1,8 @@
-package com.example.veterinaria
+package com.example.veterinaria.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.veterinaria.R
 
 class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

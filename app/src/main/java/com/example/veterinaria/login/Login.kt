@@ -1,13 +1,12 @@
-package com.example.veterinaria
+package com.example.veterinaria.login
 
 import android.content.Intent
-import android.net.wifi.hotspot2.pps.HomeSp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import com.example.veterinaria.ui.home.HomeFragment
-import com.example.veterinaria.ui.home.HomeViewModel
+import com.example.veterinaria.MainActivity
+import com.example.veterinaria.R
 
 
 class Login : AppCompatActivity() {
@@ -17,7 +16,6 @@ class Login : AppCompatActivity() {
 
         val btnIngresar:Button = findViewById(R.id.button_ingresar);
         btnIngresar.setOnClickListener(){
-            //openActivityPets();
             openActivityHome()
         }
 
@@ -29,18 +27,12 @@ class Login : AppCompatActivity() {
     }
     fun openActivityHome(){
 
-        var intent = Intent(this,MainActivity::class.java);
-        startActivity(intent)
-    }
-
-     fun openActivityPets(){
-
-        var intent = Intent(this,MyPets::class.java);
+        var intent = Intent(this, MainActivity::class.java);
         startActivity(intent)
     }
 
     fun openActivityRegister(){
-        var intent = Intent(this,Register::class.java);
+        var intent = Intent(this, Register::class.java);
         startActivity(intent)
     }
 

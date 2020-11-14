@@ -1,11 +1,12 @@
-package com.example.veterinaria
+package com.example.veterinaria.ui.general
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.veterinaria.R
 
-class profile : AppCompatActivity() {
+class Payment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_payment)
     }
 }
