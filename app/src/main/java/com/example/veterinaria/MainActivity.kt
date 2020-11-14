@@ -16,6 +16,7 @@ import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,10 +36,11 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home, R.id.nav_mypets, R.id.nav_citas), drawerLayout)
+                R.id.nav_home, R.id.nav_mypets, R.id.nav_citas,R.id.nav_consejos), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

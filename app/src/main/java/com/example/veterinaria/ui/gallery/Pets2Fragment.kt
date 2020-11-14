@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.veterinaria.R
 
-class GalleryFragment : Fragment() {
+class Pets2Fragment : Fragment() {
 
     private lateinit var galleryViewModel: GalleryViewModel
 
@@ -21,7 +21,7 @@ class GalleryFragment : Fragment() {
     ): View? {
         galleryViewModel =
                 ViewModelProvider(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+        val root = inflater.inflate(R.layout.petsdos_gallery, container, false)
         val textView: TextView = root.findViewById(R.id.text_gallery)
         galleryViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it

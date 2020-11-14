@@ -9,17 +9,32 @@
         android:id="@+id/nav_home"
         android:name="com.example.veterinaria.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_mypets"
+            app:destination="@id/nav_mypets" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_citas"
+            app:destination="@id/nav_citas" />
+        <action
+            android:id="@+id/action_nav_home_to_consejosFragment"
+            app:destination="@id/nav_consejos" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_mypets"
-        android:name="com.example.veterinaria.ui.gallery.GalleryFragment"
+        android:name="com.example.veterinaria.ui.gallery.Pets2Fragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/petsdos_gallery" />
 
     <fragment
         android:id="@+id/nav_citas"
         android:name="com.example.veterinaria.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_consejos"
+        android:name="com.example.veterinaria.ConsejosFragment"
+        android:label="fragment_consejos"
+        tools:layout="@layout/fragment_consejos" />
 </navigation>

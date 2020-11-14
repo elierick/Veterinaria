@@ -39,4 +39,6 @@
     <string name="text_apellidos_register">Apellidos</string>
     <string name="text_telefono_register">Teléfono</string>
     <string name="text_btn_verdatos_pets">Ver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
