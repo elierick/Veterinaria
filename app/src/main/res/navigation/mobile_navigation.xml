@@ -36,8 +36,28 @@
         android:id="@+id/nav_consejos"
         android:name="com.example.veterinaria.ui.general.ConsejosFragment"
         android:label="@string/menu_consejos"
-        tools:layout="@layout/fragment_consejos" />
+        tools:layout="@layout/fragment_consejos" >
 
+        <action
+            android:id="@+id/action_nav_consejos_to_nav_pulgas"
+            app:destination="@id/nav_pulgas" />
+        <action
+            android:id="@+id/action_nav_consejos_to_nav_esteril"
+            app:destination="@id/nav_esteril" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pulgas"
+        android:name="com.example.veterinaria.ui.general.Pulgas"
+        android:label="Pulgas y Garrapatas"
+        tools:layout="@layout/fragment_pulgas"
+         />
+    <fragment
+        android:id="@+id/nav_esteril"
+        android:name="com.example.veterinaria.ui.general.Esterilizacion"
+        android:label="Esterilización"
+        tools:layout="@layout/fragment_esterilizacion"
+        />
     <fragment
         android:id="@+id/nav_recordatorio"
         android:name="com.example.veterinaria.ui.general.Reminder"
@@ -55,4 +75,5 @@
         android:name="com.example.veterinaria.ui.general.Contact"
         android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_contact" />
+
 </navigation>
