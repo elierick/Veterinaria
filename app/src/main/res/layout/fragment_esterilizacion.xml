@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo2">
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="361dp"
+        android:layout_height="373dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tips2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="356dp"
+        android:justificationMode="inter_word"
+        android:text="La esterilización ayuda a prevenir las infecciones uterinas y el cáncer de mama, el cual es fatal en alrededor del 50 por ciento de los perros y 90 por ciento de los gatos. \n \nEsterilizar a su mascota antes de su primer celo ofrece la mejor protección de estas enfermedades.
+       \n \nEsterilizar a tu mascota ayuda a mantener el control de la población de los animales y de esa manera disminuir el abandono."
+        android:textColor="#0D29C6"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
