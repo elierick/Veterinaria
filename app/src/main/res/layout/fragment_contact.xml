@@ -8,14 +8,49 @@
     tools:context=".ui.general.Contact">
 
     <TextView
+        android:id="@+id/textcel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="56dp"
+        android:text="IPSA-COMVEN Nº 279"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textnamevete" />
+
+    <TextView
+        android:id="@+id/textcel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:text="MV. José Luis Aguilar Góngora"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textnamevete" />
+
+    <TextView
+        android:id="@+id/texthora"
+        android:layout_width="327dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="360dp"
+        android:text="veteaguisa"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textemail2"
+        app:layout_constraintTop_toTopOf="@+id/textnamevete" />
+
+    <TextView
         android:id="@+id/textnamevete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="220dp"
-        android:text="Veterinaria MASCOTAS"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="212dp"
+        android:text="Veterinaria AGUISA"
         android:textColor="#1C39DC"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +58,11 @@
         android:id="@+id/textdirec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="168dp"
         android:text="Oficina E.Chamorro 1 1/2 C al sur"
         android:textColor="#1C39DC"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textnamevete" />
 
@@ -37,9 +72,9 @@
         android:layout_height="29dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="228dp"
-        android:text="vete2020@gmail.com"
+        android:text="veteaguisa@gmail.com"
         android:textColor="#1C39DC"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textnamevete" />
 
@@ -47,11 +82,11 @@
         android:id="@+id/texthora2"
         android:layout_width="327dp"
         android:layout_height="60dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="288dp"
         android:text="Lunes-Viernes: 8:00am-5:00pm
-sabado: 8:00am-12:00MD"
+sabado: 8:00am-12:00pm"
         android:textColor="#1C39DC"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textemail2"
         app:layout_constraintTop_toTopOf="@+id/textnamevete" />
 
@@ -59,11 +94,11 @@ sabado: 8:00am-12:00MD"
         android:id="@+id/textcel2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="104dp"
         android:text="88689858/ 2252-2311"
         android:textColor="#1C39DC"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textnamevete" />
 
@@ -77,9 +112,9 @@ sabado: 8:00am-12:00MD"
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="308dp"
         android:src="@drawable/ic_baseline_local_phone_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,8 +122,8 @@ sabado: 8:00am-12:00MD"
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="64dp"
         android:src="@drawable/ic_baseline_location_on_24"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -96,8 +131,8 @@ sabado: 8:00am-12:00MD"
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="64dp"
         android:src="@drawable/ic_baseline_local_post_office_24"
@@ -106,11 +141,21 @@ sabado: 8:00am-12:00MD"
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="64dp"
         android:src="@drawable/ic_baseline_pending_actions_24"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_baseline_facebook_24"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
