@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.veterinaria">
 
     <application
@@ -12,6 +13,7 @@
         <activity
             android:name=".login.Register"
             android:theme="@style/Theme.Veterinaria.NoActionBar" />
+
         <activity
             android:name=".login.Login"
             android:label="@string/title_activity_login"
