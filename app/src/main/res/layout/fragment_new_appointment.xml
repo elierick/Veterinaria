@@ -4,79 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
     tools:context=".ui.general.NewAppointment">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_title_cita"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:text="@string/text_title_cita"
-            android:textAlignment="center"
-            android:textColor="#3F51B5" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_servicio_cita"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="0dp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_servicio_cita" />
+    <Spinner
+        android:id="@+id/spinner_listaServicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <Spinner
-            android:id="@+id/spinner_listaServicios"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_fecha_cita"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_listaServicios" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_fecha_cita" />
+    <EditText
+        android:id="@+id/editTextDate_FechaCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/text_hint_fecha_cita"
+        android:inputType="date"
+        android:textColor="#FFFEFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-        <EditText
-            android:id="@+id/editTextDate_FechaCita"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/text_hint_fecha_cita"
-            android:inputType="date" />
+    <TextView
+        android:id="@+id/textViewhora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_hora_cita"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate_FechaCita" />
 
-        <TextView
-            android:id="@+id/textViewhora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_hora_cita" />
+    <EditText
+        android:id="@+id/editTextDate_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text_hint_hora_cita"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhora"
+        tools:layout_editor_absoluteX="0dp" />
 
-        <EditText
-            android:id="@+id/editTextDate_hora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/text_hint_hora_cita"
-            android:inputType="time" />
+    <TextView
+        android:id="@+id/textView_observaciones"
+        android:layout_width="412dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_observacionescita"
+        android:textColor="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate_hora" />
 
-        <TextView
-            android:id="@+id/textView_observaciones"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_observacionescita" />
+    <EditText
+        android:id="@+id/editTextTextMultiLineObservaciones"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/text_hint_observaciones_cita"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_observaciones" />
 
-        <EditText
-            android:id="@+id/editTextTextMultiLineObservaciones"
-            android:layout_width="match_parent"
-            android:layout_height="159dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="@string/text_hint_observaciones_cita"
-            android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/button_enviarCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/text_button_enviarCita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineObservaciones"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/button_enviarCita"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_button_enviarCita" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ class Login : AppCompatActivity() {
 
         val btnIngresar: Button = findViewById(R.id.button_ingresar)
         btnIngresar.setOnClickListener {
-            login()
+           validar()
         }
 
         val textviewRegistrase: TextView = findViewById(R.id.textView_Registrarse)
@@ -34,9 +34,34 @@ class Login : AppCompatActivity() {
         FirebaseHelper.db = FirebaseFirestore.getInstance()
     }
 
+    fun validar(){
+        val textEmail: EditText = findViewById(R.id.editTextTextEmailAddress)
+        val textPassword: EditText = findViewById(R.id.editTextTextPassword)
+
+        if(textEmail.text.isEmpty()){
+            Toast.makeText(
+                baseContext, "Debe agregar su email.",
+                Toast.LENGTH_SHORT
+            ).show()
+            textEmail.requestFocus()
+            return;
+        }
+        if(textPassword.text.isEmpty()){
+            Toast.makeText(
+                baseContext, "Debe agregar contraseña.",
+                Toast.LENGTH_SHORT
+            ).show()
+            return;
+        }
+
+        login();
+
+    }
+
     private fun login() {
         val textEmail: EditText = findViewById(R.id.editTextTextEmailAddress)
         val textPassword: EditText = findViewById(R.id.editTextTextPassword)
+
 
         FirebaseHelper.auth.signInWithEmailAndPassword(
             textEmail.text.toString(),
