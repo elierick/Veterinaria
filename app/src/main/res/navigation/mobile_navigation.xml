@@ -66,7 +66,7 @@
 
     <fragment
         android:id="@+id/nav_miperfil"
-        android:name="com.example.veterinaria.login.profile"
+        android:name="com.example.veterinaria.login.Profile"
         android:label="@string/menu_miperfil"
         tools:layout="@layout/fragment_profile" />
 
