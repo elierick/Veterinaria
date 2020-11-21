@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.veterinaria.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Inicio"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_nav_home_to_nav_mypets"
@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_nav_home_to_consejosFragment"
             app:destination="@id/nav_consejos" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recordatorio"
+            app:destination="@id/nav_recordatorio" />
     </fragment>
 
     <fragment
