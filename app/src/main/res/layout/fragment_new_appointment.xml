@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".ui.general.NewAppointment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/text_title_cita"
+            android:textAlignment="center"
+            android:textColor="#3F51B5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_servicio_cita" />
+
+        <Spinner
+            android:id="@+id/spinner_listaServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_fecha_cita" />
+
+        <EditText
+            android:id="@+id/editTextDate_FechaCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/text_hint_fecha_cita"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textViewhora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_hora_cita" />
+
+        <EditText
+            android:id="@+id/editTextDate_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/text_hint_hora_cita"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/textView_observaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_observacionescita" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLineObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/text_hint_observaciones_cita"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button_enviarCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_button_enviarCita" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

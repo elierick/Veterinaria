@@ -41,4 +41,13 @@
     <string name="text_btn_verdatos_pets">Ver</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_fecha_cita">Fecha:</string>
+    <string name="text_servicio_cita">Tipo de Servicio</string>
+    <string name="text_title_cita">Nueva Cita</string>
+    <string name="text_hora_cita">Hora:</string>
+    <string name="text_hint_fecha_cita">Seleccionar fecha</string>
+    <string name="text_hint_hora_cita">Seleccionar Hora</string>
+    <string name="text_observacionescita">Observaciones:</string>
+    <string name="text_hint_observaciones_cita">Observaciones..</string>
+    <string name="text_button_enviarCita">Reservar</string>
 </resources>
