@@ -4,19 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="410dp"
+        android:layout_height="171dp"
+        android:src="@drawable/servicios"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="208dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/recor"
+        app:layout_constraintStart_toStartOf="@+id/btnconsejos"
+        app:layout_constraintTop_toTopOf="@+id/btncitas" />
+
+    <TextView
+        android:id="@+id/textmascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="156dp"
+        android:text="Mis Mascotas"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnmascotas" />
+
+    <TextView
+        android:id="@+id/textcitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="156dp"
+        android:text="Citas"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btncitas" />
+
+    <TextView
+        android:id="@+id/textconsejos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="140dp"
+        android:text="Consejos"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnconsejos"
+        app:layout_constraintTop_toTopOf="@+id/btnconsejos" />
+
+    <TextView
+        android:id="@+id/textrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="140dp"
+        android:text="Recordatorio"
+        android:textColor="#1C39DC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnrecord"
+        app:layout_constraintTop_toTopOf="@+id/btnrecord" />
+
+    <ImageButton
+        android:id="@+id/btnmascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="208dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/macotas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btncitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="208dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/citas"
+        app:layout_constraintStart_toStartOf="@+id/btnmascotas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnconsejos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="208dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/consejo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnmascotas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
